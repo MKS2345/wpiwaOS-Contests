@@ -1,0 +1,41 @@
+{
+  "id": "wae_dx",
+  "name": "WAE DX Contest (non-European side)",
+  "short": "WAE DX",
+  "description": "Work Europe only. Exchange: RST + serial. 1 point per QSO. Multipliers are WAE countries, counted once (single-band operation assumed; the official per-band weighting is not applied). QTC traffic is not tracked.",
+  "sentHint": "RST + serial",
+  "exchange": [
+    {
+      "key": "rst",
+      "label": "RST",
+      "kind": "text",
+      "placeholder": "59",
+      "default": "59"
+    },
+    {
+      "key": "serial",
+      "label": "Serial #",
+      "kind": "number",
+      "placeholder": "001",
+      "required": true
+    }
+  ],
+  "multiplier": {
+    "kind": "wae"
+  },
+  "multLabel": "WAE countries",
+  "regionSet": "world",
+  "points": {
+    "kind": "fixed",
+    "points": 1,
+    "requires": "eu"
+  },
+  "dupe": "per_band",
+  "defaultFields": [
+    "band",
+    "mode",
+    "frequency",
+    "time",
+    "notes"
+  ]
+}

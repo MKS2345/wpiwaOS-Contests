@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/MKS2345/wpiwaOS-Contests/schema/event.schema.json",
+  "title": "ContestEvent",
+  "description": "A specific year's dated occurrence of a template — just the calendar fact. Club-specific settings (which optional fields are shown, region weights, home location) are deliberately not here; those stay local to the importing instance.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "templateId", "name", "year", "start_at", "end_at"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$", "description": "Stable identifier, also the filename (events/<year>/<id>.json), e.g. \"nhqp-2026\"." },
+    "templateId": { "type": "string", "description": "Matches a templates/<id>.json 'id'." },
+    "name": { "type": "string", "description": "Display name for the specific occurrence, e.g. \"New Hampshire QSO Party 2026\"." },
+    "year": { "type": "integer" },
+    "start_at": { "type": "string", "format": "date-time", "description": "ISO 8601 UTC. For contests with a mid-event gap (e.g. NHQP's Saturday/Sunday split), this spans the full published window rather than modeling multiple sessions — the receiving app doesn't track session gaps either." },
+    "end_at": { "type": "string", "format": "date-time", "description": "ISO 8601 UTC." },
+    "description": { "type": "string" },
+    "source_url": { "type": "string", "format": "uri", "description": "Where these dates were confirmed — required so a stale/wrong date is easy to double-check and fix." }
+  }
+}

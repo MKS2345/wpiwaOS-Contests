@@ -1,0 +1,74 @@
+[
+  {
+    "id": "neqp-2026",
+    "templateId": "neqp",
+    "name": "New England QSO Party 2026",
+    "year": 2026,
+    "start_at": "2026-05-02T20:00:00Z",
+    "end_at": "2026-05-04T00:00:00Z",
+    "file": "2026/neqp-2026.json"
+  },
+  {
+    "id": "field-day-2026",
+    "templateId": "field_day",
+    "name": "ARRL Field Day 2026",
+    "year": 2026,
+    "start_at": "2026-06-27T18:00:00Z",
+    "end_at": "2026-06-28T20:59:00Z",
+    "file": "2026/field-day-2026.json"
+  },
+  {
+    "id": "txqp-2026",
+    "templateId": "txqp",
+    "name": "Texas QSO Party 2026",
+    "year": 2026,
+    "start_at": "2026-09-19T14:00:00Z",
+    "end_at": "2026-09-20T20:00:00Z",
+    "file": "2026/txqp-2026.json"
+  },
+  {
+    "id": "nhqp-2026",
+    "templateId": "nhqp",
+    "name": "New Hampshire QSO Party 2026",
+    "year": 2026,
+    "start_at": "2026-09-19T16:00:00Z",
+    "end_at": "2026-09-20T22:00:00Z",
+    "file": "2026/nhqp-2026.json"
+  },
+  {
+    "id": "cq-ww-ssb-2026",
+    "templateId": "cq_ww",
+    "name": "CQ World Wide DX Contest SSB 2026",
+    "year": 2026,
+    "start_at": "2026-10-24T00:00:00Z",
+    "end_at": "2026-10-25T23:59:00Z",
+    "file": "2026/cq-ww-ssb-2026.json"
+  },
+  {
+    "id": "arrl-ss-cw-2026",
+    "templateId": "arrl_ss",
+    "name": "ARRL November Sweepstakes CW 2026",
+    "year": 2026,
+    "start_at": "2026-11-07T21:00:00Z",
+    "end_at": "2026-11-09T02:59:00Z",
+    "file": "2026/arrl-ss-cw-2026.json"
+  },
+  {
+    "id": "arrl-ss-phone-2026",
+    "templateId": "arrl_ss",
+    "name": "ARRL November Sweepstakes Phone 2026",
+    "year": 2026,
+    "start_at": "2026-11-21T21:00:00Z",
+    "end_at": "2026-11-23T02:59:00Z",
+    "file": "2026/arrl-ss-phone-2026.json"
+  },
+  {
+    "id": "cq-ww-cw-2026",
+    "templateId": "cq_ww",
+    "name": "CQ World Wide DX Contest CW 2026",
+    "year": 2026,
+    "start_at": "2026-11-28T00:00:00Z",
+    "end_at": "2026-11-29T23:59:00Z",
+    "file": "2026/cq-ww-cw-2026.json"
+  }
+]

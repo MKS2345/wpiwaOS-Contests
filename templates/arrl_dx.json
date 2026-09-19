@@ -1,0 +1,42 @@
+{
+  "id": "arrl_dx",
+  "name": "ARRL International DX (W/VE side)",
+  "short": "ARRL DX",
+  "description": "Work DX only. Exchange: RST + power. 3 points per QSO. Multipliers are DXCC entities.",
+  "sentHint": "RST + our state",
+  "exchange": [
+    {
+      "key": "rst",
+      "label": "RST",
+      "kind": "text",
+      "placeholder": "59",
+      "default": "59"
+    },
+    {
+      "key": "power",
+      "label": "Power",
+      "kind": "text",
+      "placeholder": "KW / 100",
+      "required": true
+    }
+  ],
+  "multiplier": {
+    "kind": "dxcc",
+    "requires": "dx"
+  },
+  "multLabel": "DXCC entities",
+  "regionSet": "world",
+  "points": {
+    "kind": "fixed",
+    "points": 3,
+    "requires": "dx"
+  },
+  "dupe": "per_band",
+  "defaultFields": [
+    "band",
+    "mode",
+    "frequency",
+    "time",
+    "notes"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "cq_wpx",
+  "name": "CQ WPX",
+  "short": "WPX",
+  "description": "Exchange: RST + serial. Points: other continent 3, same continent 1 (2 within North America), own country 1; doubled on 160/80/40 m. Multipliers are unique prefixes, counted once.",
+  "sentHint": "RST + serial",
+  "exchange": [
+    {
+      "key": "rst",
+      "label": "RST",
+      "kind": "text",
+      "placeholder": "59",
+      "default": "59"
+    },
+    {
+      "key": "serial",
+      "label": "Serial #",
+      "kind": "number",
+      "placeholder": "001",
+      "required": true
+    }
+  ],
+  "multiplier": {
+    "kind": "prefix"
+  },
+  "multLabel": "Prefixes",
+  "regionSet": "world",
+  "points": {
+    "kind": "continent",
+    "sameCountry": 1,
+    "sameContinent": 1,
+    "sameContinentNA": 2,
+    "other": 3,
+    "lowBandFactor": 2
+  },
+  "dupe": "per_band",
+  "defaultFields": [
+    "band",
+    "mode",
+    "frequency",
+    "time",
+    "notes"
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "id": "cq_ww",
+  "name": "CQ World Wide DX",
+  "short": "CQ WW",
+  "description": "Exchange: RST + CQ zone. Points: other continent 3, same continent 1 (2 within North America), own country 0. Multipliers are zones plus DXCC entities.",
+  "sentHint": "RST + our CQ zone",
+  "exchange": [
+    {
+      "key": "rst",
+      "label": "RST",
+      "kind": "text",
+      "placeholder": "59",
+      "default": "59"
+    },
+    {
+      "key": "zone",
+      "label": "CQ zone",
+      "kind": "region",
+      "regions": [
+        {
+          "code": "1",
+          "name": "CQ zone 1"
+        },
+        {
+          "code": "2",
+          "name": "CQ zone 2"
+        },
+        {
+          "code": "3",
+          "name": "CQ zone 3"
+        },
+        {
+          "code": "4",
+          "name": "CQ zone 4"
+        },
+        {
+          "code": "5",
+          "name": "CQ zone 5"
+        },
+        {
+          "code": "6",
+          "name": "CQ zone 6"
+        },
+        {
+          "code": "7",
+          "name": "CQ zone 7"
+        },
+        {
+          "code": "8",
+          "name": "CQ zone 8"
+        },
+        {
+          "code": "9",
+          "name": "CQ zone 9"
+        },
+        {
+          "code": "10",
+          "name": "CQ zone 10"
+        },
+        {
+          "code": "11",
+          "name": "CQ zone 11"
+        },
+        {
+          "code": "12",
+          "name": "CQ zone 12"
+        },
+        {
+          "code": "13",
+          "name": "CQ zone 13"
+        },
+        {
+          "code": "14",
+          "name": "CQ zone 14"
+        },
+        {
+          "code": "15",
+          "name": "CQ zone 15"
+        },
+        {
+          "code": "16",
+          "name": "CQ zone 16"
+        },
+        {
+          "code": "17",
+          "name": "CQ zone 17"
+        },
+        {
+          "code": "18",
+          "name": "CQ zone 18"
+        },
+        {
+          "code": "19",
+          "name": "CQ zone 19"
+        },
+        {
+          "code": "20",
+          "name": "CQ zone 20"
+        },
+        {
+          "code": "21",
+          "name": "CQ zone 21"
+        },
+        {
+          "code": "22",
+          "name": "CQ zone 22"
+        },
+        {
+          "code": "23",
+          "name": "CQ zone 23"
+        },
+        {
+          "code": "24",
+          "name": "CQ zone 24"
+        },
+        {
+          "code": "25",
+          "name": "CQ zone 25"
+        },
+        {
+          "code": "26",
+          "name": "CQ zone 26"
+        },
+        {
+          "code": "27",
+          "name": "CQ zone 27"
+        },
+        {
+          "code": "28",
+          "name": "CQ zone 28"
+        },
+        {
+          "code": "29",
+          "name": "CQ zone 29"
+        },
+        {
+          "code": "30",
+          "name": "CQ zone 30"
+        },
+        {
+          "code": "31",
+          "name": "CQ zone 31"
+        },
+        {
+          "code": "32",
+          "name": "CQ zone 32"
+        },
+        {
+          "code": "33",
+          "name": "CQ zone 33"
+        },
+        {
+          "code": "34",
+          "name": "CQ zone 34"
+        },
+        {
+          "code": "35",
+          "name": "CQ zone 35"
+        },
+        {
+          "code": "36",
+          "name": "CQ zone 36"
+        },
+        {
+          "code": "37",
+          "name": "CQ zone 37"
+        },
+        {
+          "code": "38",
+          "name": "CQ zone 38"
+        },
+        {
+          "code": "39",
+          "name": "CQ zone 39"
+        },
+        {
+          "code": "40",
+          "name": "CQ zone 40"
+        }
+      ],
+      "required": true,
+      "placeholder": "14"
+    }
+  ],
+  "multiplier": {
+    "kind": "zone_dxcc",
+    "field": "zone"
+  },
+  "multLabel": "Zones + DXCC entities",
+  "regionSet": "world",
+  "points": {
+    "kind": "continent",
+    "sameCountry": 0,
+    "sameContinent": 1,
+    "sameContinentNA": 2,
+    "other": 3
+  },
+  "dupe": "per_band",
+  "defaultFields": [
+    "band",
+    "mode",
+    "frequency",
+    "time",
+    "notes"
+  ]
+}

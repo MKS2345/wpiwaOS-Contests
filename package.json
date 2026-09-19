@@ -1,0 +1,16 @@
+{
+  "name": "wpiwaos-contests",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Portable contest templates + dated yearly events for wpiwaOS (and any compatible club logbook).",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "build-index": "node scripts/build-index.mjs",
+    "check": "npm run build-index && npm run validate"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}

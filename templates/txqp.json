@@ -1,0 +1,1318 @@
+{
+  "id": "txqp",
+  "name": "Texas QSO Party (out-of-state)",
+  "short": "TXQP",
+  "description": "For stations outside Texas working Texas stations. Exchange: RS(T) + the Texas county they send. Phone 2 pts, CW/digital 3 pts. Multiplier is each Texas county, counted once (max 254). Mobile-worked bonus points are not tracked.",
+  "sentHint": "RS(T) + our state/country/province",
+  "exchange": [
+    {
+      "key": "rst",
+      "label": "RST",
+      "kind": "text",
+      "placeholder": "59",
+      "default": "59"
+    },
+    {
+      "key": "county",
+      "label": "County",
+      "kind": "region",
+      "regions": [
+        {
+          "code": "ANDE",
+          "name": "Anderson",
+          "parent": "TX"
+        },
+        {
+          "code": "ANDR",
+          "name": "Andrews",
+          "parent": "TX"
+        },
+        {
+          "code": "ANGE",
+          "name": "Angelina",
+          "parent": "TX"
+        },
+        {
+          "code": "ARAN",
+          "name": "Aransas",
+          "parent": "TX"
+        },
+        {
+          "code": "ARCH",
+          "name": "Archer",
+          "parent": "TX"
+        },
+        {
+          "code": "ARMS",
+          "name": "Armstrong",
+          "parent": "TX"
+        },
+        {
+          "code": "ATAS",
+          "name": "Atascosa",
+          "parent": "TX"
+        },
+        {
+          "code": "AUST",
+          "name": "Austin",
+          "parent": "TX"
+        },
+        {
+          "code": "BAIL",
+          "name": "Bailey",
+          "parent": "TX"
+        },
+        {
+          "code": "BAND",
+          "name": "Bandera",
+          "parent": "TX"
+        },
+        {
+          "code": "BAST",
+          "name": "Bastrop",
+          "parent": "TX"
+        },
+        {
+          "code": "BAYL",
+          "name": "Baylor",
+          "parent": "TX"
+        },
+        {
+          "code": "BEE",
+          "name": "Bee",
+          "parent": "TX"
+        },
+        {
+          "code": "BELL",
+          "name": "Bell",
+          "parent": "TX"
+        },
+        {
+          "code": "BEXA",
+          "name": "Bexar",
+          "parent": "TX"
+        },
+        {
+          "code": "BLAN",
+          "name": "Blanco",
+          "parent": "TX"
+        },
+        {
+          "code": "BORD",
+          "name": "Borden",
+          "parent": "TX"
+        },
+        {
+          "code": "BOSQ",
+          "name": "Bosque",
+          "parent": "TX"
+        },
+        {
+          "code": "BOWI",
+          "name": "Bowie",
+          "parent": "TX"
+        },
+        {
+          "code": "BZIA",
+          "name": "Brazoria",
+          "parent": "TX"
+        },
+        {
+          "code": "BZOS",
+          "name": "Brazos",
+          "parent": "TX"
+        },
+        {
+          "code": "BREW",
+          "name": "Brewster",
+          "parent": "TX"
+        },
+        {
+          "code": "BRIS",
+          "name": "Briscoe",
+          "parent": "TX"
+        },
+        {
+          "code": "BROO",
+          "name": "Brooks",
+          "parent": "TX"
+        },
+        {
+          "code": "BROW",
+          "name": "Brown",
+          "parent": "TX"
+        },
+        {
+          "code": "BURL",
+          "name": "Burleson",
+          "parent": "TX"
+        },
+        {
+          "code": "BURN",
+          "name": "Burnet",
+          "parent": "TX"
+        },
+        {
+          "code": "CALD",
+          "name": "Caldwell",
+          "parent": "TX"
+        },
+        {
+          "code": "CALH",
+          "name": "Calhoun",
+          "parent": "TX"
+        },
+        {
+          "code": "CALL",
+          "name": "Callahan",
+          "parent": "TX"
+        },
+        {
+          "code": "CMRN",
+          "name": "Cameron",
+          "parent": "TX"
+        },
+        {
+          "code": "CAMP",
+          "name": "Camp",
+          "parent": "TX"
+        },
+        {
+          "code": "CARS",
+          "name": "Carson",
+          "parent": "TX"
+        },
+        {
+          "code": "CASS",
+          "name": "Cass",
+          "parent": "TX"
+        },
+        {
+          "code": "CAST",
+          "name": "Castro",
+          "parent": "TX"
+        },
+        {
+          "code": "CHAM",
+          "name": "Chambers",
+          "parent": "TX"
+        },
+        {
+          "code": "CHER",
+          "name": "Cherokee",
+          "parent": "TX"
+        },
+        {
+          "code": "CHIL",
+          "name": "Childress",
+          "parent": "TX"
+        },
+        {
+          "code": "CLAY",
+          "name": "Clay",
+          "parent": "TX"
+        },
+        {
+          "code": "COCH",
+          "name": "Cochran",
+          "parent": "TX"
+        },
+        {
+          "code": "COKE",
+          "name": "Coke",
+          "parent": "TX"
+        },
+        {
+          "code": "COLE",
+          "name": "Coleman",
+          "parent": "TX"
+        },
+        {
+          "code": "COLN",
+          "name": "Collin",
+          "parent": "TX"
+        },
+        {
+          "code": "COLW",
+          "name": "Collingsworth",
+          "parent": "TX"
+        },
+        {
+          "code": "COLO",
+          "name": "Colorado",
+          "parent": "TX"
+        },
+        {
+          "code": "COML",
+          "name": "Comal",
+          "parent": "TX"
+        },
+        {
+          "code": "COMA",
+          "name": "Comanche",
+          "parent": "TX"
+        },
+        {
+          "code": "CONC",
+          "name": "Concho",
+          "parent": "TX"
+        },
+        {
+          "code": "COOK",
+          "name": "Cooke",
+          "parent": "TX"
+        },
+        {
+          "code": "CORY",
+          "name": "Coryell",
+          "parent": "TX"
+        },
+        {
+          "code": "COTT",
+          "name": "Cottle",
+          "parent": "TX"
+        },
+        {
+          "code": "CRAN",
+          "name": "Crane",
+          "parent": "TX"
+        },
+        {
+          "code": "CROC",
+          "name": "Crockett",
+          "parent": "TX"
+        },
+        {
+          "code": "CROS",
+          "name": "Crosby",
+          "parent": "TX"
+        },
+        {
+          "code": "CULB",
+          "name": "Culberson",
+          "parent": "TX"
+        },
+        {
+          "code": "DALM",
+          "name": "Dallam",
+          "parent": "TX"
+        },
+        {
+          "code": "DALS",
+          "name": "Dallas",
+          "parent": "TX"
+        },
+        {
+          "code": "DAWS",
+          "name": "Dawson",
+          "parent": "TX"
+        },
+        {
+          "code": "DSMI",
+          "name": "Deaf Smith",
+          "parent": "TX"
+        },
+        {
+          "code": "DELT",
+          "name": "Delta",
+          "parent": "TX"
+        },
+        {
+          "code": "DENT",
+          "name": "Denton",
+          "parent": "TX"
+        },
+        {
+          "code": "DEWI",
+          "name": "DeWitt",
+          "parent": "TX"
+        },
+        {
+          "code": "DICK",
+          "name": "Dickens",
+          "parent": "TX"
+        },
+        {
+          "code": "DIMM",
+          "name": "Dimmit",
+          "parent": "TX"
+        },
+        {
+          "code": "DONL",
+          "name": "Donley",
+          "parent": "TX"
+        },
+        {
+          "code": "DUVA",
+          "name": "Duval",
+          "parent": "TX"
+        },
+        {
+          "code": "EAST",
+          "name": "Eastland",
+          "parent": "TX"
+        },
+        {
+          "code": "ECTO",
+          "name": "Ector",
+          "parent": "TX"
+        },
+        {
+          "code": "EDWA",
+          "name": "Edwards",
+          "parent": "TX"
+        },
+        {
+          "code": "EPAS",
+          "name": "El Paso",
+          "parent": "TX"
+        },
+        {
+          "code": "ELLI",
+          "name": "Ellis",
+          "parent": "TX"
+        },
+        {
+          "code": "ERAT",
+          "name": "Erath",
+          "parent": "TX"
+        },
+        {
+          "code": "FALL",
+          "name": "Falls",
+          "parent": "TX"
+        },
+        {
+          "code": "FANN",
+          "name": "Fannin",
+          "parent": "TX"
+        },
+        {
+          "code": "FAYE",
+          "name": "Fayette",
+          "parent": "TX"
+        },
+        {
+          "code": "FISH",
+          "name": "Fisher",
+          "parent": "TX"
+        },
+        {
+          "code": "FLOY",
+          "name": "Floyd",
+          "parent": "TX"
+        },
+        {
+          "code": "FOAR",
+          "name": "Foard",
+          "parent": "TX"
+        },
+        {
+          "code": "FBEN",
+          "name": "Fort Bend",
+          "parent": "TX"
+        },
+        {
+          "code": "FRAN",
+          "name": "Franklin",
+          "parent": "TX"
+        },
+        {
+          "code": "FREE",
+          "name": "Freestone",
+          "parent": "TX"
+        },
+        {
+          "code": "FRIO",
+          "name": "Frio",
+          "parent": "TX"
+        },
+        {
+          "code": "GAIN",
+          "name": "Gaines",
+          "parent": "TX"
+        },
+        {
+          "code": "GALV",
+          "name": "Galveston",
+          "parent": "TX"
+        },
+        {
+          "code": "GARZ",
+          "name": "Garza",
+          "parent": "TX"
+        },
+        {
+          "code": "GILL",
+          "name": "Gillespie",
+          "parent": "TX"
+        },
+        {
+          "code": "GLAS",
+          "name": "Glasscock",
+          "parent": "TX"
+        },
+        {
+          "code": "GOLI",
+          "name": "Goliad",
+          "parent": "TX"
+        },
+        {
+          "code": "GONZ",
+          "name": "Gonzales",
+          "parent": "TX"
+        },
+        {
+          "code": "GRAY",
+          "name": "Gray",
+          "parent": "TX"
+        },
+        {
+          "code": "GRSN",
+          "name": "Grayson",
+          "parent": "TX"
+        },
+        {
+          "code": "GREG",
+          "name": "Gregg",
+          "parent": "TX"
+        },
+        {
+          "code": "GRIM",
+          "name": "Grimes",
+          "parent": "TX"
+        },
+        {
+          "code": "GUAD",
+          "name": "Guadalupe",
+          "parent": "TX"
+        },
+        {
+          "code": "HALE",
+          "name": "Hale",
+          "parent": "TX"
+        },
+        {
+          "code": "HALL",
+          "name": "Hall",
+          "parent": "TX"
+        },
+        {
+          "code": "HAMI",
+          "name": "Hamilton",
+          "parent": "TX"
+        },
+        {
+          "code": "HANS",
+          "name": "Hansford",
+          "parent": "TX"
+        },
+        {
+          "code": "HDMN",
+          "name": "Hardeman",
+          "parent": "TX"
+        },
+        {
+          "code": "HRDN",
+          "name": "Hardin",
+          "parent": "TX"
+        },
+        {
+          "code": "HARR",
+          "name": "Harris",
+          "parent": "TX"
+        },
+        {
+          "code": "HRSN",
+          "name": "Harrison",
+          "parent": "TX"
+        },
+        {
+          "code": "HART",
+          "name": "Hartley",
+          "parent": "TX"
+        },
+        {
+          "code": "HASK",
+          "name": "Haskell",
+          "parent": "TX"
+        },
+        {
+          "code": "HAYS",
+          "name": "Hays",
+          "parent": "TX"
+        },
+        {
+          "code": "HEMP",
+          "name": "Hemphill",
+          "parent": "TX"
+        },
+        {
+          "code": "HEND",
+          "name": "Henderson",
+          "parent": "TX"
+        },
+        {
+          "code": "HIDA",
+          "name": "Hidalgo",
+          "parent": "TX"
+        },
+        {
+          "code": "HILL",
+          "name": "Hill",
+          "parent": "TX"
+        },
+        {
+          "code": "HOCK",
+          "name": "Hockley",
+          "parent": "TX"
+        },
+        {
+          "code": "HOOD",
+          "name": "Hood",
+          "parent": "TX"
+        },
+        {
+          "code": "HOPK",
+          "name": "Hopkins",
+          "parent": "TX"
+        },
+        {
+          "code": "HOUS",
+          "name": "Houston",
+          "parent": "TX"
+        },
+        {
+          "code": "HOWA",
+          "name": "Howard",
+          "parent": "TX"
+        },
+        {
+          "code": "HUDS",
+          "name": "Hudspeth",
+          "parent": "TX"
+        },
+        {
+          "code": "HUNT",
+          "name": "Hunt",
+          "parent": "TX"
+        },
+        {
+          "code": "HUTC",
+          "name": "Hutchinson",
+          "parent": "TX"
+        },
+        {
+          "code": "IRIO",
+          "name": "Irion",
+          "parent": "TX"
+        },
+        {
+          "code": "JACK",
+          "name": "Jack",
+          "parent": "TX"
+        },
+        {
+          "code": "JKSN",
+          "name": "Jackson",
+          "parent": "TX"
+        },
+        {
+          "code": "JASP",
+          "name": "Jasper",
+          "parent": "TX"
+        },
+        {
+          "code": "JDAV",
+          "name": "Jeff Davis",
+          "parent": "TX"
+        },
+        {
+          "code": "JEFF",
+          "name": "Jefferson",
+          "parent": "TX"
+        },
+        {
+          "code": "JHOG",
+          "name": "Jim Hogg",
+          "parent": "TX"
+        },
+        {
+          "code": "JWEL",
+          "name": "Jim Wells",
+          "parent": "TX"
+        },
+        {
+          "code": "JOHN",
+          "name": "Johnson",
+          "parent": "TX"
+        },
+        {
+          "code": "JONE",
+          "name": "Jones",
+          "parent": "TX"
+        },
+        {
+          "code": "KARN",
+          "name": "Karnes",
+          "parent": "TX"
+        },
+        {
+          "code": "KAUF",
+          "name": "Kaufman",
+          "parent": "TX"
+        },
+        {
+          "code": "KEND",
+          "name": "Kendall",
+          "parent": "TX"
+        },
+        {
+          "code": "KENY",
+          "name": "Kenedy",
+          "parent": "TX"
+        },
+        {
+          "code": "KENT",
+          "name": "Kent",
+          "parent": "TX"
+        },
+        {
+          "code": "KERR",
+          "name": "Kerr",
+          "parent": "TX"
+        },
+        {
+          "code": "KIMB",
+          "name": "Kimble",
+          "parent": "TX"
+        },
+        {
+          "code": "KING",
+          "name": "King",
+          "parent": "TX"
+        },
+        {
+          "code": "KINN",
+          "name": "Kinney",
+          "parent": "TX"
+        },
+        {
+          "code": "KLEB",
+          "name": "Kleberg",
+          "parent": "TX"
+        },
+        {
+          "code": "KNOX",
+          "name": "Knox",
+          "parent": "TX"
+        },
+        {
+          "code": "LAMA",
+          "name": "Lamar",
+          "parent": "TX"
+        },
+        {
+          "code": "LAMB",
+          "name": "Lamb",
+          "parent": "TX"
+        },
+        {
+          "code": "LAMP",
+          "name": "Lampasas",
+          "parent": "TX"
+        },
+        {
+          "code": "LSAL",
+          "name": "La Salle",
+          "parent": "TX"
+        },
+        {
+          "code": "LAVA",
+          "name": "Lavaca",
+          "parent": "TX"
+        },
+        {
+          "code": "LEE",
+          "name": "Lee",
+          "parent": "TX"
+        },
+        {
+          "code": "LEON",
+          "name": "Leon",
+          "parent": "TX"
+        },
+        {
+          "code": "LIBE",
+          "name": "Liberty",
+          "parent": "TX"
+        },
+        {
+          "code": "LIME",
+          "name": "Limestone",
+          "parent": "TX"
+        },
+        {
+          "code": "LIPS",
+          "name": "Lipscomb",
+          "parent": "TX"
+        },
+        {
+          "code": "LIVO",
+          "name": "Live Oak",
+          "parent": "TX"
+        },
+        {
+          "code": "LLAN",
+          "name": "Llano",
+          "parent": "TX"
+        },
+        {
+          "code": "LOVI",
+          "name": "Loving",
+          "parent": "TX"
+        },
+        {
+          "code": "LUBB",
+          "name": "Lubbock",
+          "parent": "TX"
+        },
+        {
+          "code": "LYNN",
+          "name": "Lynn",
+          "parent": "TX"
+        },
+        {
+          "code": "MADI",
+          "name": "Madison",
+          "parent": "TX"
+        },
+        {
+          "code": "MARI",
+          "name": "Marion",
+          "parent": "TX"
+        },
+        {
+          "code": "MART",
+          "name": "Martin",
+          "parent": "TX"
+        },
+        {
+          "code": "MASO",
+          "name": "Mason",
+          "parent": "TX"
+        },
+        {
+          "code": "MATA",
+          "name": "Matagorda",
+          "parent": "TX"
+        },
+        {
+          "code": "MAVE",
+          "name": "Maverick",
+          "parent": "TX"
+        },
+        {
+          "code": "MCUL",
+          "name": "McCulloch",
+          "parent": "TX"
+        },
+        {
+          "code": "MLEN",
+          "name": "McLennan",
+          "parent": "TX"
+        },
+        {
+          "code": "MMUL",
+          "name": "McMullen",
+          "parent": "TX"
+        },
+        {
+          "code": "MEDI",
+          "name": "Medina",
+          "parent": "TX"
+        },
+        {
+          "code": "MENA",
+          "name": "Menard",
+          "parent": "TX"
+        },
+        {
+          "code": "MIDL",
+          "name": "Midland",
+          "parent": "TX"
+        },
+        {
+          "code": "MILA",
+          "name": "Milam",
+          "parent": "TX"
+        },
+        {
+          "code": "MILL",
+          "name": "Mills",
+          "parent": "TX"
+        },
+        {
+          "code": "MITC",
+          "name": "Mitchell",
+          "parent": "TX"
+        },
+        {
+          "code": "MONT",
+          "name": "Montague",
+          "parent": "TX"
+        },
+        {
+          "code": "MGMY",
+          "name": "Montgomery",
+          "parent": "TX"
+        },
+        {
+          "code": "MOOR",
+          "name": "Moore",
+          "parent": "TX"
+        },
+        {
+          "code": "MORR",
+          "name": "Morris",
+          "parent": "TX"
+        },
+        {
+          "code": "MOTL",
+          "name": "Motley",
+          "parent": "TX"
+        },
+        {
+          "code": "NACO",
+          "name": "Nacogdoches",
+          "parent": "TX"
+        },
+        {
+          "code": "NAVA",
+          "name": "Navarro",
+          "parent": "TX"
+        },
+        {
+          "code": "NEWT",
+          "name": "Newton",
+          "parent": "TX"
+        },
+        {
+          "code": "NOLA",
+          "name": "Nolan",
+          "parent": "TX"
+        },
+        {
+          "code": "NUEC",
+          "name": "Nueces",
+          "parent": "TX"
+        },
+        {
+          "code": "OCHI",
+          "name": "Ochiltree",
+          "parent": "TX"
+        },
+        {
+          "code": "OLDH",
+          "name": "Oldham",
+          "parent": "TX"
+        },
+        {
+          "code": "ORAN",
+          "name": "Orange",
+          "parent": "TX"
+        },
+        {
+          "code": "PPIN",
+          "name": "Palo Pinto",
+          "parent": "TX"
+        },
+        {
+          "code": "PANO",
+          "name": "Panola",
+          "parent": "TX"
+        },
+        {
+          "code": "PARK",
+          "name": "Parker",
+          "parent": "TX"
+        },
+        {
+          "code": "PARM",
+          "name": "Parmer",
+          "parent": "TX"
+        },
+        {
+          "code": "PECO",
+          "name": "Pecos",
+          "parent": "TX"
+        },
+        {
+          "code": "POLK",
+          "name": "Polk",
+          "parent": "TX"
+        },
+        {
+          "code": "POTT",
+          "name": "Potter",
+          "parent": "TX"
+        },
+        {
+          "code": "PRES",
+          "name": "Presidio",
+          "parent": "TX"
+        },
+        {
+          "code": "RAIN",
+          "name": "Rains",
+          "parent": "TX"
+        },
+        {
+          "code": "RAND",
+          "name": "Randall",
+          "parent": "TX"
+        },
+        {
+          "code": "REAG",
+          "name": "Reagan",
+          "parent": "TX"
+        },
+        {
+          "code": "REAL",
+          "name": "Real",
+          "parent": "TX"
+        },
+        {
+          "code": "RRIV",
+          "name": "Red River",
+          "parent": "TX"
+        },
+        {
+          "code": "REEV",
+          "name": "Reeves",
+          "parent": "TX"
+        },
+        {
+          "code": "REFU",
+          "name": "Refugio",
+          "parent": "TX"
+        },
+        {
+          "code": "ROBE",
+          "name": "Roberts",
+          "parent": "TX"
+        },
+        {
+          "code": "RBSN",
+          "name": "Robertson",
+          "parent": "TX"
+        },
+        {
+          "code": "ROCK",
+          "name": "Rockwall",
+          "parent": "TX"
+        },
+        {
+          "code": "RUNN",
+          "name": "Runnels",
+          "parent": "TX"
+        },
+        {
+          "code": "RUSK",
+          "name": "Rusk",
+          "parent": "TX"
+        },
+        {
+          "code": "SABI",
+          "name": "Sabine",
+          "parent": "TX"
+        },
+        {
+          "code": "SAUG",
+          "name": "San Augustine",
+          "parent": "TX"
+        },
+        {
+          "code": "SJAC",
+          "name": "San Jacinto",
+          "parent": "TX"
+        },
+        {
+          "code": "SPAT",
+          "name": "San Patricio",
+          "parent": "TX"
+        },
+        {
+          "code": "SSAB",
+          "name": "San Saba",
+          "parent": "TX"
+        },
+        {
+          "code": "SCHL",
+          "name": "Schleicher",
+          "parent": "TX"
+        },
+        {
+          "code": "SCUR",
+          "name": "Scurry",
+          "parent": "TX"
+        },
+        {
+          "code": "SHAC",
+          "name": "Shackelford",
+          "parent": "TX"
+        },
+        {
+          "code": "SHEL",
+          "name": "Shelby",
+          "parent": "TX"
+        },
+        {
+          "code": "SHMN",
+          "name": "Sherman",
+          "parent": "TX"
+        },
+        {
+          "code": "SMIT",
+          "name": "Smith",
+          "parent": "TX"
+        },
+        {
+          "code": "SOME",
+          "name": "Somervell",
+          "parent": "TX"
+        },
+        {
+          "code": "STAR",
+          "name": "Starr",
+          "parent": "TX"
+        },
+        {
+          "code": "STEP",
+          "name": "Stephens",
+          "parent": "TX"
+        },
+        {
+          "code": "STER",
+          "name": "Sterling",
+          "parent": "TX"
+        },
+        {
+          "code": "STON",
+          "name": "Stonewall",
+          "parent": "TX"
+        },
+        {
+          "code": "SUTT",
+          "name": "Sutton",
+          "parent": "TX"
+        },
+        {
+          "code": "SWIS",
+          "name": "Swisher",
+          "parent": "TX"
+        },
+        {
+          "code": "TARR",
+          "name": "Tarrant",
+          "parent": "TX"
+        },
+        {
+          "code": "TAYL",
+          "name": "Taylor",
+          "parent": "TX"
+        },
+        {
+          "code": "TERL",
+          "name": "Terrell",
+          "parent": "TX"
+        },
+        {
+          "code": "TERY",
+          "name": "Terry",
+          "parent": "TX"
+        },
+        {
+          "code": "THRO",
+          "name": "Throckmorton",
+          "parent": "TX"
+        },
+        {
+          "code": "TITU",
+          "name": "Titus",
+          "parent": "TX"
+        },
+        {
+          "code": "TGRE",
+          "name": "Tom Green",
+          "parent": "TX"
+        },
+        {
+          "code": "TRAV",
+          "name": "Travis",
+          "parent": "TX"
+        },
+        {
+          "code": "TRIN",
+          "name": "Trinity",
+          "parent": "TX"
+        },
+        {
+          "code": "TYLE",
+          "name": "Tyler",
+          "parent": "TX"
+        },
+        {
+          "code": "UPSH",
+          "name": "Upshur",
+          "parent": "TX"
+        },
+        {
+          "code": "UPTO",
+          "name": "Upton",
+          "parent": "TX"
+        },
+        {
+          "code": "UVAL",
+          "name": "Uvalde",
+          "parent": "TX"
+        },
+        {
+          "code": "VVER",
+          "name": "Val Verde",
+          "parent": "TX"
+        },
+        {
+          "code": "VZAN",
+          "name": "Van Zandt",
+          "parent": "TX"
+        },
+        {
+          "code": "VICT",
+          "name": "Victoria",
+          "parent": "TX"
+        },
+        {
+          "code": "WALK",
+          "name": "Walker",
+          "parent": "TX"
+        },
+        {
+          "code": "WALL",
+          "name": "Waller",
+          "parent": "TX"
+        },
+        {
+          "code": "WARD",
+          "name": "Ward",
+          "parent": "TX"
+        },
+        {
+          "code": "WASH",
+          "name": "Washington",
+          "parent": "TX"
+        },
+        {
+          "code": "WEBB",
+          "name": "Webb",
+          "parent": "TX"
+        },
+        {
+          "code": "WHAR",
+          "name": "Wharton",
+          "parent": "TX"
+        },
+        {
+          "code": "WHEE",
+          "name": "Wheeler",
+          "parent": "TX"
+        },
+        {
+          "code": "WICH",
+          "name": "Wichita",
+          "parent": "TX"
+        },
+        {
+          "code": "WILB",
+          "name": "Wilbarger",
+          "parent": "TX"
+        },
+        {
+          "code": "WILY",
+          "name": "Willacy",
+          "parent": "TX"
+        },
+        {
+          "code": "WMSN",
+          "name": "Williamson",
+          "parent": "TX"
+        },
+        {
+          "code": "WLSN",
+          "name": "Wilson",
+          "parent": "TX"
+        },
+        {
+          "code": "WINK",
+          "name": "Winkler",
+          "parent": "TX"
+        },
+        {
+          "code": "WISE",
+          "name": "Wise",
+          "parent": "TX"
+        },
+        {
+          "code": "WOOD",
+          "name": "Wood",
+          "parent": "TX"
+        },
+        {
+          "code": "YOAK",
+          "name": "Yoakum",
+          "parent": "TX"
+        },
+        {
+          "code": "YOUN",
+          "name": "Young",
+          "parent": "TX"
+        },
+        {
+          "code": "ZAPA",
+          "name": "Zapata",
+          "parent": "TX"
+        },
+        {
+          "code": "ZAVA",
+          "name": "Zavala",
+          "parent": "TX"
+        }
+      ],
+      "strict": true,
+      "required": true,
+      "placeholder": "TARR",
+      "help": "The Texas county the other station sends"
+    }
+  ],
+  "multiplier": {
+    "kind": "region_list",
+    "field": "county"
+  },
+  "multLabel": "Texas counties",
+  "regionSet": "custom",
+  "points": {
+    "kind": "mode",
+    "cw": 3,
+    "digital": 3,
+    "phone": 2
+  },
+  "dupe": "per_band",
+  "defaultFields": [
+    "band",
+    "mode",
+    "frequency",
+    "time",
+    "name",
+    "notes"
+  ]
+}

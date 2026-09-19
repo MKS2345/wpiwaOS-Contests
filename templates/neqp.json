@@ -1,0 +1,639 @@
+{
+  "id": "neqp",
+  "name": "New England QSO Party (NE station)",
+  "short": "NEQP",
+  "description": "Exchange: RST + location. New England stations send their county (e.g. WORMA); others send state, province or \"DX\". Phone 1 pt, CW/digital 2 pts. Multipliers: states, provinces and DXCC entities.",
+  "sentHint": "RST + our county code",
+  "exchange": [
+    {
+      "key": "rst",
+      "label": "RST",
+      "kind": "text",
+      "placeholder": "59",
+      "default": "59"
+    },
+    {
+      "key": "loc",
+      "label": "County / state / DX",
+      "kind": "region",
+      "regions": [
+        {
+          "code": "FAICT",
+          "name": "Fairfield",
+          "parent": "CT"
+        },
+        {
+          "code": "HARCT",
+          "name": "Hartford",
+          "parent": "CT"
+        },
+        {
+          "code": "LITCT",
+          "name": "Litchfield",
+          "parent": "CT"
+        },
+        {
+          "code": "MIDCT",
+          "name": "Middlesex",
+          "parent": "CT"
+        },
+        {
+          "code": "NHVCT",
+          "name": "New Haven",
+          "parent": "CT"
+        },
+        {
+          "code": "NLNCT",
+          "name": "New London",
+          "parent": "CT"
+        },
+        {
+          "code": "TOLCT",
+          "name": "Tolland",
+          "parent": "CT"
+        },
+        {
+          "code": "WINCT",
+          "name": "Windham",
+          "parent": "CT"
+        },
+        {
+          "code": "BARMA",
+          "name": "Barnstable",
+          "parent": "MA"
+        },
+        {
+          "code": "BERMA",
+          "name": "Berkshire",
+          "parent": "MA"
+        },
+        {
+          "code": "BRIMA",
+          "name": "Bristol",
+          "parent": "MA"
+        },
+        {
+          "code": "DUKMA",
+          "name": "Dukes",
+          "parent": "MA"
+        },
+        {
+          "code": "ESSMA",
+          "name": "Essex",
+          "parent": "MA"
+        },
+        {
+          "code": "FRAMA",
+          "name": "Franklin",
+          "parent": "MA"
+        },
+        {
+          "code": "HAMMA",
+          "name": "Hampden",
+          "parent": "MA"
+        },
+        {
+          "code": "HASMA",
+          "name": "Hampshire",
+          "parent": "MA"
+        },
+        {
+          "code": "MIDMA",
+          "name": "Middlesex",
+          "parent": "MA"
+        },
+        {
+          "code": "NANMA",
+          "name": "Nantucket",
+          "parent": "MA"
+        },
+        {
+          "code": "NORMA",
+          "name": "Norfolk",
+          "parent": "MA"
+        },
+        {
+          "code": "PLYMA",
+          "name": "Plymouth",
+          "parent": "MA"
+        },
+        {
+          "code": "SUFMA",
+          "name": "Suffolk",
+          "parent": "MA"
+        },
+        {
+          "code": "WORMA",
+          "name": "Worcester",
+          "parent": "MA"
+        },
+        {
+          "code": "ANDME",
+          "name": "Androscoggin",
+          "parent": "ME"
+        },
+        {
+          "code": "AROME",
+          "name": "Aroostook",
+          "parent": "ME"
+        },
+        {
+          "code": "CUMME",
+          "name": "Cumberland",
+          "parent": "ME"
+        },
+        {
+          "code": "FRAME",
+          "name": "Franklin",
+          "parent": "ME"
+        },
+        {
+          "code": "HANME",
+          "name": "Hancock",
+          "parent": "ME"
+        },
+        {
+          "code": "KENME",
+          "name": "Kennebec",
+          "parent": "ME"
+        },
+        {
+          "code": "KNOME",
+          "name": "Knox",
+          "parent": "ME"
+        },
+        {
+          "code": "LINME",
+          "name": "Lincoln",
+          "parent": "ME"
+        },
+        {
+          "code": "OXFME",
+          "name": "Oxford",
+          "parent": "ME"
+        },
+        {
+          "code": "PENME",
+          "name": "Penobscot",
+          "parent": "ME"
+        },
+        {
+          "code": "PISME",
+          "name": "Piscataquis",
+          "parent": "ME"
+        },
+        {
+          "code": "SAGME",
+          "name": "Sagadahoc",
+          "parent": "ME"
+        },
+        {
+          "code": "SOMME",
+          "name": "Somerset",
+          "parent": "ME"
+        },
+        {
+          "code": "WALME",
+          "name": "Waldo",
+          "parent": "ME"
+        },
+        {
+          "code": "WASME",
+          "name": "Washington",
+          "parent": "ME"
+        },
+        {
+          "code": "YORME",
+          "name": "York",
+          "parent": "ME"
+        },
+        {
+          "code": "BELNH",
+          "name": "Belknap",
+          "parent": "NH"
+        },
+        {
+          "code": "CARNH",
+          "name": "Carroll",
+          "parent": "NH"
+        },
+        {
+          "code": "CHENH",
+          "name": "Cheshire",
+          "parent": "NH"
+        },
+        {
+          "code": "COONH",
+          "name": "Coos",
+          "parent": "NH"
+        },
+        {
+          "code": "GRANH",
+          "name": "Grafton",
+          "parent": "NH"
+        },
+        {
+          "code": "HILNH",
+          "name": "Hillsborough",
+          "parent": "NH"
+        },
+        {
+          "code": "MERNH",
+          "name": "Merrimack",
+          "parent": "NH"
+        },
+        {
+          "code": "ROCNH",
+          "name": "Rockingham",
+          "parent": "NH"
+        },
+        {
+          "code": "STRNH",
+          "name": "Strafford",
+          "parent": "NH"
+        },
+        {
+          "code": "SULNH",
+          "name": "Sullivan",
+          "parent": "NH"
+        },
+        {
+          "code": "BRIRI",
+          "name": "Bristol",
+          "parent": "RI"
+        },
+        {
+          "code": "KENRI",
+          "name": "Kent",
+          "parent": "RI"
+        },
+        {
+          "code": "NEWRI",
+          "name": "Newport",
+          "parent": "RI"
+        },
+        {
+          "code": "PRORI",
+          "name": "Providence",
+          "parent": "RI"
+        },
+        {
+          "code": "WASRI",
+          "name": "Washington",
+          "parent": "RI"
+        },
+        {
+          "code": "ADDVT",
+          "name": "Addison",
+          "parent": "VT"
+        },
+        {
+          "code": "BENVT",
+          "name": "Bennington",
+          "parent": "VT"
+        },
+        {
+          "code": "CALVT",
+          "name": "Caledonia",
+          "parent": "VT"
+        },
+        {
+          "code": "CHIVT",
+          "name": "Chittenden",
+          "parent": "VT"
+        },
+        {
+          "code": "ESSVT",
+          "name": "Essex",
+          "parent": "VT"
+        },
+        {
+          "code": "FRAVT",
+          "name": "Franklin",
+          "parent": "VT"
+        },
+        {
+          "code": "GRAVT",
+          "name": "Grand Isle",
+          "parent": "VT"
+        },
+        {
+          "code": "LAMVT",
+          "name": "Lamoille",
+          "parent": "VT"
+        },
+        {
+          "code": "ORAVT",
+          "name": "Orange",
+          "parent": "VT"
+        },
+        {
+          "code": "ORLVT",
+          "name": "Orleans",
+          "parent": "VT"
+        },
+        {
+          "code": "RUTVT",
+          "name": "Rutland",
+          "parent": "VT"
+        },
+        {
+          "code": "WNVT",
+          "name": "Washington",
+          "parent": "VT"
+        },
+        {
+          "code": "WDMVT",
+          "name": "Windham",
+          "parent": "VT"
+        },
+        {
+          "code": "WDSVT",
+          "name": "Windsor",
+          "parent": "VT"
+        },
+        {
+          "code": "AL",
+          "name": "Alabama"
+        },
+        {
+          "code": "AK",
+          "name": "Alaska"
+        },
+        {
+          "code": "AZ",
+          "name": "Arizona"
+        },
+        {
+          "code": "AR",
+          "name": "Arkansas"
+        },
+        {
+          "code": "CA",
+          "name": "California"
+        },
+        {
+          "code": "CO",
+          "name": "Colorado"
+        },
+        {
+          "code": "CT",
+          "name": "Connecticut"
+        },
+        {
+          "code": "DE",
+          "name": "Delaware"
+        },
+        {
+          "code": "DC",
+          "name": "District of Columbia"
+        },
+        {
+          "code": "FL",
+          "name": "Florida"
+        },
+        {
+          "code": "GA",
+          "name": "Georgia"
+        },
+        {
+          "code": "HI",
+          "name": "Hawaii"
+        },
+        {
+          "code": "ID",
+          "name": "Idaho"
+        },
+        {
+          "code": "IL",
+          "name": "Illinois"
+        },
+        {
+          "code": "IN",
+          "name": "Indiana"
+        },
+        {
+          "code": "IA",
+          "name": "Iowa"
+        },
+        {
+          "code": "KS",
+          "name": "Kansas"
+        },
+        {
+          "code": "KY",
+          "name": "Kentucky"
+        },
+        {
+          "code": "LA",
+          "name": "Louisiana"
+        },
+        {
+          "code": "ME",
+          "name": "Maine"
+        },
+        {
+          "code": "MD",
+          "name": "Maryland"
+        },
+        {
+          "code": "MA",
+          "name": "Massachusetts"
+        },
+        {
+          "code": "MI",
+          "name": "Michigan"
+        },
+        {
+          "code": "MN",
+          "name": "Minnesota"
+        },
+        {
+          "code": "MS",
+          "name": "Mississippi"
+        },
+        {
+          "code": "MO",
+          "name": "Missouri"
+        },
+        {
+          "code": "MT",
+          "name": "Montana"
+        },
+        {
+          "code": "NE",
+          "name": "Nebraska"
+        },
+        {
+          "code": "NV",
+          "name": "Nevada"
+        },
+        {
+          "code": "NH",
+          "name": "New Hampshire"
+        },
+        {
+          "code": "NJ",
+          "name": "New Jersey"
+        },
+        {
+          "code": "NM",
+          "name": "New Mexico"
+        },
+        {
+          "code": "NY",
+          "name": "New York"
+        },
+        {
+          "code": "NC",
+          "name": "North Carolina"
+        },
+        {
+          "code": "ND",
+          "name": "North Dakota"
+        },
+        {
+          "code": "OH",
+          "name": "Ohio"
+        },
+        {
+          "code": "OK",
+          "name": "Oklahoma"
+        },
+        {
+          "code": "OR",
+          "name": "Oregon"
+        },
+        {
+          "code": "PA",
+          "name": "Pennsylvania"
+        },
+        {
+          "code": "RI",
+          "name": "Rhode Island"
+        },
+        {
+          "code": "SC",
+          "name": "South Carolina"
+        },
+        {
+          "code": "SD",
+          "name": "South Dakota"
+        },
+        {
+          "code": "TN",
+          "name": "Tennessee"
+        },
+        {
+          "code": "TX",
+          "name": "Texas"
+        },
+        {
+          "code": "UT",
+          "name": "Utah"
+        },
+        {
+          "code": "VT",
+          "name": "Vermont"
+        },
+        {
+          "code": "VA",
+          "name": "Virginia"
+        },
+        {
+          "code": "WA",
+          "name": "Washington"
+        },
+        {
+          "code": "WV",
+          "name": "West Virginia"
+        },
+        {
+          "code": "WI",
+          "name": "Wisconsin"
+        },
+        {
+          "code": "WY",
+          "name": "Wyoming"
+        },
+        {
+          "code": "AB",
+          "name": "Alberta"
+        },
+        {
+          "code": "BC",
+          "name": "British Columbia"
+        },
+        {
+          "code": "MB",
+          "name": "Manitoba"
+        },
+        {
+          "code": "NB",
+          "name": "New Brunswick"
+        },
+        {
+          "code": "NL",
+          "name": "Newfoundland and Labrador"
+        },
+        {
+          "code": "NS",
+          "name": "Nova Scotia"
+        },
+        {
+          "code": "NT",
+          "name": "Northwest Territories"
+        },
+        {
+          "code": "NU",
+          "name": "Nunavut"
+        },
+        {
+          "code": "ON",
+          "name": "Ontario"
+        },
+        {
+          "code": "PE",
+          "name": "Prince Edward Island"
+        },
+        {
+          "code": "QC",
+          "name": "Quebec"
+        },
+        {
+          "code": "SK",
+          "name": "Saskatchewan"
+        },
+        {
+          "code": "YT",
+          "name": "Yukon"
+        }
+      ],
+      "required": true,
+      "placeholder": "WORMA · NY · DX",
+      "help": "NE county code, state/province abbreviation, or DX"
+    }
+  ],
+  "multiplier": {
+    "kind": "location",
+    "field": "loc",
+    "dxCounts": true
+  },
+  "multLabel": "States / provinces / DXCC",
+  "regionSet": "us_ca",
+  "points": {
+    "kind": "mode",
+    "cw": 2,
+    "digital": 2,
+    "phone": 1
+  },
+  "dupe": "per_band",
+  "defaultFields": [
+    "band",
+    "mode",
+    "frequency",
+    "time",
+    "name",
+    "notes"
+  ]
+}

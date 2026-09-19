@@ -1,0 +1,142 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/MKS2345/wpiwaOS-Contests/schema/template.schema.json",
+  "title": "ContestTemplate",
+  "description": "A portable, reusable contest ruleset: exchange fields, scoring, and multiplier rules. Contains no dates — see event.schema.json for a specific year's dated occurrence of a template.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "short", "description", "sentHint", "exchange", "multiplier", "multLabel", "regionSet", "points", "dupe", "defaultFields"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9_]+$", "description": "Stable identifier, also the filename (<id>.json)." },
+    "name": { "type": "string" },
+    "short": { "type": "string", "description": "Short label for compact UI (badges, dropdowns)." },
+    "description": { "type": "string", "description": "One or two sentences summarizing exchange + scoring, shown in the template picker." },
+    "sentHint": { "type": "string", "description": "Reminder of what the logging station sends, shown on the entry form." },
+    "exchange": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/exchangeField" }
+    },
+    "multiplier": { "$ref": "#/definitions/multiplierRule" },
+    "multLabel": { "type": "string", "description": "Label for the multiplier count, e.g. \"ARRL/RAC sections\"." },
+    "regionSet": {
+      "type": "string",
+      "enum": ["arrl_sections", "us_ca", "world", "custom", "none"],
+      "description": "Which map the dashboard draws. 'arrl_sections'/'us_ca'/'world' reuse the receiving app's built-in geographic TopoJSON. 'custom' renders a worked/needed chip grid from the multiplier's own region list instead — use this for any region set the receiving app can't be assumed to have pre-built map geometry for (state/county QSO parties, etc.). 'none' hides the map entirely."
+    },
+    "points": { "$ref": "#/definitions/pointsRule" },
+    "dupe": { "type": "string", "enum": ["once", "per_band"], "description": "Whether a station may be worked once for the whole contest, or once per band." },
+    "defaultFields": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["band", "mode", "frequency", "rst", "power", "time", "name", "qth", "grid", "country", "qsl", "notes"]
+      },
+      "description": "Which optional contact-form fields are shown by default."
+    }
+  },
+  "definitions": {
+    "exchangeField": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "label", "kind"],
+      "properties": {
+        "key": { "type": "string" },
+        "label": { "type": "string" },
+        "kind": { "type": "string", "enum": ["text", "number", "select", "region"] },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["value", "label"],
+            "properties": { "value": { "type": "string" }, "label": { "type": "string" } }
+          },
+          "description": "For kind: 'select'."
+        },
+        "regions": {
+          "type": "array",
+          "items": { "$ref": "region.schema.json" },
+          "description": "For kind: 'region' — the full list of valid/suggested codes. Also what the 'location' and 'region_list' multiplier kinds score against, via multiplier.field."
+        },
+        "strict": {
+          "type": "boolean",
+          "description": "For kind: 'region' — reject anything that isn't exactly one of 'regions' (case-insensitive). Only for closed lists with no escape hatch; a field that also accepts \"DX\" or similar must leave this unset."
+        },
+        "placeholder": { "type": "string" },
+        "required": { "type": "boolean" },
+        "help": { "type": "string" },
+        "default": { "type": "string", "description": "Default value for a fresh QSO, e.g. RST 59." }
+      }
+    },
+    "multiplierRule": {
+      "oneOf": [
+        { "type": "object", "additionalProperties": false, "required": ["kind"], "properties": { "kind": { "const": "none" } } },
+        {
+          "type": "object", "additionalProperties": false, "required": ["kind", "field"],
+          "properties": { "kind": { "const": "section" }, "field": { "type": "string" } },
+          "description": "Built-in: scores against the app's own ARRL/RAC section list."
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["kind", "field"],
+          "properties": {
+            "kind": { "const": "region_list" },
+            "field": { "type": "string", "description": "Name of an exchange field with kind:'region' — its own 'regions' array is what gets scored." }
+          },
+          "description": "Generic closed-list multiplier: exact match against the named exchange field's own 'regions'. Use this for any new state/county-style QSO party template — no app code change required to add one."
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["kind", "field"],
+          "properties": {
+            "kind": { "const": "location" },
+            "field": { "type": "string", "description": "Name of an exchange field with kind:'region'. A region with a 'parent' rolls up to that parent (e.g. a county counting as its state)." },
+            "naOnly": { "type": "boolean", "description": "DX fallback only counts North American DXCC entities." },
+            "dxCounts": { "type": "boolean", "description": "A value not found in 'regions' falls back to the DXCC entity of the callsign." }
+          },
+          "description": "Two-tier location multiplier (NEQP/NAQP-style): county→state rollup, plus an optional DX/DXCC fallback for anything outside the list."
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["kind"],
+          "properties": { "kind": { "const": "dxcc" }, "requires": { "type": "string", "enum": ["dx"] } }
+        },
+        { "type": "object", "additionalProperties": false, "required": ["kind"], "properties": { "kind": { "const": "wae" } } },
+        {
+          "type": "object", "additionalProperties": false, "required": ["kind", "field"],
+          "properties": { "kind": { "const": "zone_dxcc" }, "field": { "type": "string" } }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["kind", "field"],
+          "properties": { "kind": { "const": "itu" }, "field": { "type": "string" } }
+        },
+        { "type": "object", "additionalProperties": false, "required": ["kind"], "properties": { "kind": { "const": "prefix" } } },
+        { "type": "object", "additionalProperties": false, "required": ["kind"], "properties": { "kind": { "const": "grid" } } }
+      ]
+    },
+    "pointsRule": {
+      "oneOf": [
+        {
+          "type": "object", "additionalProperties": false, "required": ["kind", "points"],
+          "properties": { "kind": { "const": "fixed" }, "points": { "type": "number" }, "requires": { "type": "string", "enum": ["dx", "eu"] } }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["kind", "cw", "digital", "phone"],
+          "properties": { "kind": { "const": "mode" }, "cw": { "type": "number" }, "digital": { "type": "number" }, "phone": { "type": "number" } }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["kind", "sameCountry", "sameContinent", "other"],
+          "properties": {
+            "kind": { "const": "continent" },
+            "sameCountry": { "type": "number" },
+            "sameContinent": { "type": "number" },
+            "sameContinentNA": { "type": "number" },
+            "other": { "type": "number" },
+            "lowBandFactor": { "type": "number", "description": "Multiplies points on 160/80/40m, e.g. CQ WPX's doubling." }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["kind", "sameZone", "sameContinent", "other", "hq"],
+          "properties": { "kind": { "const": "iaru" }, "sameZone": { "type": "number" }, "sameContinent": { "type": "number" }, "other": { "type": "number" }, "hq": { "type": "number" } }
+        }
+      ]
+    }
+  }
+}

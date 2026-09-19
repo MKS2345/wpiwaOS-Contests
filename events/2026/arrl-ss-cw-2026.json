@@ -1,0 +1,10 @@
+{
+  "id": "arrl-ss-cw-2026",
+  "templateId": "arrl_ss",
+  "name": "ARRL November Sweepstakes CW 2026",
+  "year": 2026,
+  "start_at": "2026-11-07T21:00:00Z",
+  "end_at": "2026-11-09T02:59:00Z",
+  "description": "First full November weekend. Sweepstakes runs CW and Phone as separate weekends using the same exchange/template.",
+  "source_url": "https://contests.arrl.org/sscw/"
+}

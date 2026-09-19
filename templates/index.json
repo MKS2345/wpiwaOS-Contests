@@ -1,0 +1,86 @@
+[
+  {
+    "id": "arrl_dx",
+    "name": "ARRL International DX (W/VE side)",
+    "short": "ARRL DX",
+    "description": "Work DX only. Exchange: RST + power. 3 points per QSO. Multipliers are DXCC entities.",
+    "file": "arrl_dx.json"
+  },
+  {
+    "id": "arrl_ss",
+    "name": "ARRL November Sweepstakes",
+    "short": "Sweepstakes",
+    "description": "Exchange: serial, precedence, your call, check (year licensed), ARRL/RAC section. 2 points per QSO; each station may be worked once. Multipliers are the 85 sections.",
+    "file": "arrl_ss.json"
+  },
+  {
+    "id": "cq_wpx",
+    "name": "CQ WPX",
+    "short": "WPX",
+    "description": "Exchange: RST + serial. Points: other continent 3, same continent 1 (2 within North America), own country 1; doubled on 160/80/40 m. Multipliers are unique prefixes, counted once.",
+    "file": "cq_wpx.json"
+  },
+  {
+    "id": "cq_ww",
+    "name": "CQ World Wide DX",
+    "short": "CQ WW",
+    "description": "Exchange: RST + CQ zone. Points: other continent 3, same continent 1 (2 within North America), own country 0. Multipliers are zones plus DXCC entities.",
+    "file": "cq_ww.json"
+  },
+  {
+    "id": "custom",
+    "name": "Custom / simple",
+    "short": "Custom",
+    "description": "Free-text exchange. Fixed points per QSO, multiplier by DXCC entity, grid square or none.",
+    "file": "custom.json"
+  },
+  {
+    "id": "field_day",
+    "name": "ARRL Field Day",
+    "short": "Field Day",
+    "description": "Exchange: class + section. Phone 1 pt, CW/digital 2 pts. No multipliers (bonus points are not tracked).",
+    "file": "field_day.json"
+  },
+  {
+    "id": "iaru_hf",
+    "name": "IARU HF Championship",
+    "short": "IARU HF",
+    "description": "Exchange: RST + ITU zone (HQ stations send their society abbreviation). Points: same zone 1, same continent 3, other continent 5, HQ stations 1. Multipliers are ITU zones + HQ stations.",
+    "file": "iaru_hf.json"
+  },
+  {
+    "id": "naqp",
+    "name": "North American QSO Party",
+    "short": "NAQP",
+    "description": "Exchange: name + state/province/country. 1 point per QSO. Multipliers are states, provinces and North American countries.",
+    "file": "naqp.json"
+  },
+  {
+    "id": "neqp",
+    "name": "New England QSO Party (NE station)",
+    "short": "NEQP",
+    "description": "Exchange: RST + location. New England stations send their county (e.g. WORMA); others send state, province or \"DX\". Phone 1 pt, CW/digital 2 pts. Multipliers: states, provinces and DXCC entities.",
+    "file": "neqp.json"
+  },
+  {
+    "id": "nhqp",
+    "name": "New Hampshire QSO Party (out-of-state)",
+    "short": "NHQP",
+    "description": "For stations outside NH working NH stations. Exchange: RS(T) + the NH county they send. Phone 1 pt, CW/digital 2 pts. Multiplier is each NH county, counted once (the official once-per-band count, max 50, is not applied).",
+    "file": "nhqp.json"
+  },
+  {
+    "id": "txqp",
+    "name": "Texas QSO Party (out-of-state)",
+    "short": "TXQP",
+    "description": "For stations outside Texas working Texas stations. Exchange: RS(T) + the Texas county they send. Phone 2 pts, CW/digital 3 pts. Multiplier is each Texas county, counted once (max 254). Mobile-worked bonus points are not tracked.",
+    "file": "txqp.json"
+  },
+  {
+    "id": "wae_dx",
+    "name": "WAE DX Contest (non-European side)",
+    "short": "WAE DX",
+    "description": "Work Europe only. Exchange: RST + serial. 1 point per QSO. Multipliers are WAE countries, counted once (single-band operation assumed; the official per-band weighting is not applied). QTC traffic is not tracked.",
+    "file": "wae_dx.json"
+  }
+]

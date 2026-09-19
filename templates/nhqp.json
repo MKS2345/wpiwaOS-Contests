@@ -1,0 +1,98 @@
+{
+  "id": "nhqp",
+  "name": "New Hampshire QSO Party (out-of-state)",
+  "short": "NHQP",
+  "description": "For stations outside NH working NH stations. Exchange: RS(T) + the NH county they send. Phone 1 pt, CW/digital 2 pts. Multiplier is each NH county, counted once (the official once-per-band count, max 50, is not applied).",
+  "sentHint": "RS(T) + our state/province (or \"DX\")",
+  "exchange": [
+    {
+      "key": "rst",
+      "label": "RST",
+      "kind": "text",
+      "placeholder": "59",
+      "default": "59"
+    },
+    {
+      "key": "county",
+      "label": "County",
+      "kind": "region",
+      "regions": [
+        {
+          "code": "BEL",
+          "name": "Belknap",
+          "parent": "NH"
+        },
+        {
+          "code": "CAR",
+          "name": "Carroll",
+          "parent": "NH"
+        },
+        {
+          "code": "CHE",
+          "name": "Cheshire",
+          "parent": "NH"
+        },
+        {
+          "code": "COO",
+          "name": "Coos",
+          "parent": "NH"
+        },
+        {
+          "code": "GRA",
+          "name": "Grafton",
+          "parent": "NH"
+        },
+        {
+          "code": "HIL",
+          "name": "Hillsborough",
+          "parent": "NH"
+        },
+        {
+          "code": "MER",
+          "name": "Merrimack",
+          "parent": "NH"
+        },
+        {
+          "code": "ROC",
+          "name": "Rockingham",
+          "parent": "NH"
+        },
+        {
+          "code": "STR",
+          "name": "Strafford",
+          "parent": "NH"
+        },
+        {
+          "code": "SUL",
+          "name": "Sullivan",
+          "parent": "NH"
+        }
+      ],
+      "strict": true,
+      "required": true,
+      "placeholder": "BEL",
+      "help": "The NH county the other station sends"
+    }
+  ],
+  "multiplier": {
+    "kind": "region_list",
+    "field": "county"
+  },
+  "multLabel": "NH counties",
+  "regionSet": "custom",
+  "points": {
+    "kind": "mode",
+    "cw": 2,
+    "digital": 2,
+    "phone": 1
+  },
+  "dupe": "per_band",
+  "defaultFields": [
+    "band",
+    "mode",
+    "frequency",
+    "time",
+    "name",
+    "notes"
+  ]
+}

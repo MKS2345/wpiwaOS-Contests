@@ -1,0 +1,10 @@
+{
+  "id": "nhqp-2026",
+  "templateId": "nhqp",
+  "name": "New Hampshire QSO Party 2026",
+  "year": 2026,
+  "start_at": "2026-09-19T16:00:00Z",
+  "end_at": "2026-09-20T22:00:00Z",
+  "description": "3rd weekend of September. Published as two sessions with a gap (1600Z Sat–0400Z Sun, then 1200Z–2200Z Sun) — this spans the full window since the app doesn't model a mid-event gap.",
+  "source_url": "https://w1wqm.org/nh-qso-party/"
+}

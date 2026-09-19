@@ -1,0 +1,512 @@
+{
+  "id": "arrl_ss",
+  "name": "ARRL November Sweepstakes",
+  "short": "Sweepstakes",
+  "description": "Exchange: serial, precedence, your call, check (year licensed), ARRL/RAC section. 2 points per QSO; each station may be worked once. Multipliers are the 85 sections.",
+  "sentHint": "Serial · precedence · our call · check · our section",
+  "exchange": [
+    {
+      "key": "serial",
+      "label": "Serial #",
+      "kind": "number",
+      "placeholder": "001",
+      "required": true
+    },
+    {
+      "key": "prec",
+      "label": "Prec",
+      "kind": "region",
+      "regions": [
+        {
+          "code": "A",
+          "name": "Low power"
+        },
+        {
+          "code": "B",
+          "name": "High power"
+        },
+        {
+          "code": "Q",
+          "name": "QRP"
+        },
+        {
+          "code": "M",
+          "name": "Multi-op"
+        },
+        {
+          "code": "S",
+          "name": "School club"
+        },
+        {
+          "code": "U",
+          "name": "Unlimited"
+        }
+      ],
+      "strict": true,
+      "required": true,
+      "placeholder": "A",
+      "help": "A/B/Q/M/S/U"
+    },
+    {
+      "key": "check",
+      "label": "Check",
+      "kind": "text",
+      "placeholder": "72",
+      "required": true,
+      "help": "Last two digits of the year first licensed"
+    },
+    {
+      "key": "section",
+      "label": "Section",
+      "kind": "region",
+      "regions": [
+        {
+          "code": "CT",
+          "name": "Connecticut",
+          "parent": "CT"
+        },
+        {
+          "code": "EMA",
+          "name": "Eastern Massachusetts",
+          "parent": "MA"
+        },
+        {
+          "code": "ME",
+          "name": "Maine",
+          "parent": "ME"
+        },
+        {
+          "code": "NH",
+          "name": "New Hampshire",
+          "parent": "NH"
+        },
+        {
+          "code": "RI",
+          "name": "Rhode Island",
+          "parent": "RI"
+        },
+        {
+          "code": "VT",
+          "name": "Vermont",
+          "parent": "VT"
+        },
+        {
+          "code": "WMA",
+          "name": "Western Massachusetts",
+          "parent": "MA"
+        },
+        {
+          "code": "ENY",
+          "name": "Eastern New York",
+          "parent": "NY"
+        },
+        {
+          "code": "NLI",
+          "name": "NYC / Long Island",
+          "parent": "NY"
+        },
+        {
+          "code": "NNJ",
+          "name": "Northern New Jersey",
+          "parent": "NJ"
+        },
+        {
+          "code": "NNY",
+          "name": "Northern New York",
+          "parent": "NY"
+        },
+        {
+          "code": "SNJ",
+          "name": "Southern New Jersey",
+          "parent": "NJ"
+        },
+        {
+          "code": "WNY",
+          "name": "Western New York",
+          "parent": "NY"
+        },
+        {
+          "code": "DE",
+          "name": "Delaware",
+          "parent": "DE"
+        },
+        {
+          "code": "EPA",
+          "name": "Eastern Pennsylvania",
+          "parent": "PA"
+        },
+        {
+          "code": "MDC",
+          "name": "Maryland / DC",
+          "parent": "MD"
+        },
+        {
+          "code": "WPA",
+          "name": "Western Pennsylvania",
+          "parent": "PA"
+        },
+        {
+          "code": "AL",
+          "name": "Alabama",
+          "parent": "AL"
+        },
+        {
+          "code": "GA",
+          "name": "Georgia",
+          "parent": "GA"
+        },
+        {
+          "code": "KY",
+          "name": "Kentucky",
+          "parent": "KY"
+        },
+        {
+          "code": "NC",
+          "name": "North Carolina",
+          "parent": "NC"
+        },
+        {
+          "code": "NFL",
+          "name": "Northern Florida",
+          "parent": "FL"
+        },
+        {
+          "code": "SC",
+          "name": "South Carolina",
+          "parent": "SC"
+        },
+        {
+          "code": "SFL",
+          "name": "Southern Florida",
+          "parent": "FL"
+        },
+        {
+          "code": "WCF",
+          "name": "West Central Florida",
+          "parent": "FL"
+        },
+        {
+          "code": "TN",
+          "name": "Tennessee",
+          "parent": "TN"
+        },
+        {
+          "code": "VA",
+          "name": "Virginia",
+          "parent": "VA"
+        },
+        {
+          "code": "PR",
+          "name": "Puerto Rico",
+          "parent": "PR"
+        },
+        {
+          "code": "VI",
+          "name": "US Virgin Islands",
+          "parent": "VI"
+        },
+        {
+          "code": "AR",
+          "name": "Arkansas",
+          "parent": "AR"
+        },
+        {
+          "code": "LA",
+          "name": "Louisiana",
+          "parent": "LA"
+        },
+        {
+          "code": "MS",
+          "name": "Mississippi",
+          "parent": "MS"
+        },
+        {
+          "code": "NM",
+          "name": "New Mexico",
+          "parent": "NM"
+        },
+        {
+          "code": "NTX",
+          "name": "North Texas",
+          "parent": "TX"
+        },
+        {
+          "code": "OK",
+          "name": "Oklahoma",
+          "parent": "OK"
+        },
+        {
+          "code": "STX",
+          "name": "South Texas",
+          "parent": "TX"
+        },
+        {
+          "code": "WTX",
+          "name": "West Texas",
+          "parent": "TX"
+        },
+        {
+          "code": "EB",
+          "name": "East Bay",
+          "parent": "CA"
+        },
+        {
+          "code": "LAX",
+          "name": "Los Angeles",
+          "parent": "CA"
+        },
+        {
+          "code": "ORG",
+          "name": "Orange",
+          "parent": "CA"
+        },
+        {
+          "code": "SB",
+          "name": "Santa Barbara",
+          "parent": "CA"
+        },
+        {
+          "code": "SCV",
+          "name": "Santa Clara Valley",
+          "parent": "CA"
+        },
+        {
+          "code": "SDG",
+          "name": "San Diego",
+          "parent": "CA"
+        },
+        {
+          "code": "SF",
+          "name": "San Francisco",
+          "parent": "CA"
+        },
+        {
+          "code": "SJV",
+          "name": "San Joaquin Valley",
+          "parent": "CA"
+        },
+        {
+          "code": "SV",
+          "name": "Sacramento Valley",
+          "parent": "CA"
+        },
+        {
+          "code": "PAC",
+          "name": "Pacific (Hawaii)",
+          "parent": "HI"
+        },
+        {
+          "code": "AK",
+          "name": "Alaska",
+          "parent": "AK"
+        },
+        {
+          "code": "AZ",
+          "name": "Arizona",
+          "parent": "AZ"
+        },
+        {
+          "code": "EWA",
+          "name": "Eastern Washington",
+          "parent": "WA"
+        },
+        {
+          "code": "ID",
+          "name": "Idaho",
+          "parent": "ID"
+        },
+        {
+          "code": "MT",
+          "name": "Montana",
+          "parent": "MT"
+        },
+        {
+          "code": "NV",
+          "name": "Nevada",
+          "parent": "NV"
+        },
+        {
+          "code": "OR",
+          "name": "Oregon",
+          "parent": "OR"
+        },
+        {
+          "code": "UT",
+          "name": "Utah",
+          "parent": "UT"
+        },
+        {
+          "code": "WWA",
+          "name": "Western Washington",
+          "parent": "WA"
+        },
+        {
+          "code": "WY",
+          "name": "Wyoming",
+          "parent": "WY"
+        },
+        {
+          "code": "MI",
+          "name": "Michigan",
+          "parent": "MI"
+        },
+        {
+          "code": "OH",
+          "name": "Ohio",
+          "parent": "OH"
+        },
+        {
+          "code": "WV",
+          "name": "West Virginia",
+          "parent": "WV"
+        },
+        {
+          "code": "IL",
+          "name": "Illinois",
+          "parent": "IL"
+        },
+        {
+          "code": "IN",
+          "name": "Indiana",
+          "parent": "IN"
+        },
+        {
+          "code": "WI",
+          "name": "Wisconsin",
+          "parent": "WI"
+        },
+        {
+          "code": "CO",
+          "name": "Colorado",
+          "parent": "CO"
+        },
+        {
+          "code": "IA",
+          "name": "Iowa",
+          "parent": "IA"
+        },
+        {
+          "code": "KS",
+          "name": "Kansas",
+          "parent": "KS"
+        },
+        {
+          "code": "MN",
+          "name": "Minnesota",
+          "parent": "MN"
+        },
+        {
+          "code": "MO",
+          "name": "Missouri",
+          "parent": "MO"
+        },
+        {
+          "code": "NE",
+          "name": "Nebraska",
+          "parent": "NE"
+        },
+        {
+          "code": "ND",
+          "name": "North Dakota",
+          "parent": "ND"
+        },
+        {
+          "code": "SD",
+          "name": "South Dakota",
+          "parent": "SD"
+        },
+        {
+          "code": "AB",
+          "name": "Alberta",
+          "parent": "AB"
+        },
+        {
+          "code": "BC",
+          "name": "British Columbia",
+          "parent": "BC"
+        },
+        {
+          "code": "GH",
+          "name": "Golden Horseshoe",
+          "parent": "ON"
+        },
+        {
+          "code": "MB",
+          "name": "Manitoba",
+          "parent": "MB"
+        },
+        {
+          "code": "NB",
+          "name": "New Brunswick",
+          "parent": "NB"
+        },
+        {
+          "code": "NL",
+          "name": "Newfoundland / Labrador",
+          "parent": "NL"
+        },
+        {
+          "code": "NS",
+          "name": "Nova Scotia",
+          "parent": "NS"
+        },
+        {
+          "code": "ONE",
+          "name": "Ontario East",
+          "parent": "ON"
+        },
+        {
+          "code": "ONN",
+          "name": "Ontario North",
+          "parent": "ON"
+        },
+        {
+          "code": "ONS",
+          "name": "Ontario South",
+          "parent": "ON"
+        },
+        {
+          "code": "PE",
+          "name": "Prince Edward Island",
+          "parent": "PE"
+        },
+        {
+          "code": "QC",
+          "name": "Quebec",
+          "parent": "QC"
+        },
+        {
+          "code": "SK",
+          "name": "Saskatchewan",
+          "parent": "SK"
+        },
+        {
+          "code": "TER",
+          "name": "Territories (YT/NT/NU)",
+          "parent": "YT"
+        }
+      ],
+      "strict": true,
+      "required": true,
+      "placeholder": "EMA"
+    }
+  ],
+  "multiplier": {
+    "kind": "section",
+    "field": "section"
+  },
+  "multLabel": "ARRL/RAC sections",
+  "regionSet": "arrl_sections",
+  "points": {
+    "kind": "fixed",
+    "points": 2
+  },
+  "dupe": "once",
+  "defaultFields": [
+    "band",
+    "mode",
+    "frequency",
+    "time",
+    "notes"
+  ]
+}

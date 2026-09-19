@@ -1,0 +1,10 @@
+{
+  "id": "neqp-2026",
+  "templateId": "neqp",
+  "name": "New England QSO Party 2026",
+  "year": 2026,
+  "start_at": "2026-05-02T20:00:00Z",
+  "end_at": "2026-05-04T00:00:00Z",
+  "description": "First full May weekend. Published as two sessions with an overnight break (2000Z Sat–0500Z Sun, then 1300Z Sun–0000Z Mon) — this spans the full window since the app doesn't model a mid-event gap.",
+  "source_url": "https://neqp.org/rules/"
+}

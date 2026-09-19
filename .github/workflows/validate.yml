@@ -1,0 +1,22 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - name: Rebuild index files and fail if they're out of date
+        run: |
+          npm run build-index
+          git diff --exit-code -- templates/index.json events/index.json || \
+            (echo "::error::index.json is out of date — run 'npm run build-index' and commit the result" && exit 1)
+      - run: npm run validate

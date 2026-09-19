@@ -1,0 +1,10 @@
+{
+  "id": "txqp-2026",
+  "templateId": "txqp",
+  "name": "Texas QSO Party 2026",
+  "year": 2026,
+  "start_at": "2026-09-19T14:00:00Z",
+  "end_at": "2026-09-20T20:00:00Z",
+  "description": "3rd weekend of September. Published as two sessions with a gap (1400Z Sat–0200Z Sun, then 1400Z–2000Z Sun) — this spans the full window since the app doesn't model a mid-event gap.",
+  "source_url": "https://txqp.net/?page_id=23"
+}

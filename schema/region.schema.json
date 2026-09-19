@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/MKS2345/wpiwaOS-Contests/schema/region.schema.json",
+  "title": "Region",
+  "description": "One multiplier region: a section, county, state/province, zone, etc.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["code", "name"],
+  "properties": {
+    "code": { "type": "string", "description": "The exact code a station sends on the air (case-insensitive match)." },
+    "name": { "type": "string", "description": "Human-readable name shown in the UI." },
+    "parent": { "type": "string", "description": "Optional rollup target, e.g. a county's state — used by the 'location' multiplier kind." }
+  }
+}

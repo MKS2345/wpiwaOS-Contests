@@ -1,0 +1,36 @@
+{
+  "id": "custom",
+  "name": "Custom / simple",
+  "short": "Custom",
+  "description": "Free-text exchange. Fixed points per QSO, multiplier by DXCC entity, grid square or none.",
+  "sentHint": "Whatever the contest asks for",
+  "exchange": [
+    {
+      "key": "exchange",
+      "label": "Exchange rcvd",
+      "kind": "text",
+      "placeholder": "59 001"
+    }
+  ],
+  "multiplier": {
+    "kind": "dxcc"
+  },
+  "multLabel": "DXCC entities",
+  "regionSet": "world",
+  "points": {
+    "kind": "fixed",
+    "points": 1
+  },
+  "dupe": "per_band",
+  "defaultFields": [
+    "band",
+    "mode",
+    "frequency",
+    "rst",
+    "time",
+    "name",
+    "grid",
+    "country",
+    "notes"
+  ]
+}

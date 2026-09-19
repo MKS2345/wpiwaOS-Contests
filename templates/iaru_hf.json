@@ -1,0 +1,406 @@
+{
+  "id": "iaru_hf",
+  "name": "IARU HF Championship",
+  "short": "IARU HF",
+  "description": "Exchange: RST + ITU zone (HQ stations send their society abbreviation). Points: same zone 1, same continent 3, other continent 5, HQ stations 1. Multipliers are ITU zones + HQ stations.",
+  "sentHint": "RST + our ITU zone",
+  "exchange": [
+    {
+      "key": "rst",
+      "label": "RST",
+      "kind": "text",
+      "placeholder": "59",
+      "default": "59"
+    },
+    {
+      "key": "zone",
+      "label": "ITU zone / HQ",
+      "kind": "region",
+      "regions": [
+        {
+          "code": "1",
+          "name": "ITU zone 1"
+        },
+        {
+          "code": "2",
+          "name": "ITU zone 2"
+        },
+        {
+          "code": "3",
+          "name": "ITU zone 3"
+        },
+        {
+          "code": "4",
+          "name": "ITU zone 4"
+        },
+        {
+          "code": "5",
+          "name": "ITU zone 5"
+        },
+        {
+          "code": "6",
+          "name": "ITU zone 6"
+        },
+        {
+          "code": "7",
+          "name": "ITU zone 7"
+        },
+        {
+          "code": "8",
+          "name": "ITU zone 8"
+        },
+        {
+          "code": "9",
+          "name": "ITU zone 9"
+        },
+        {
+          "code": "10",
+          "name": "ITU zone 10"
+        },
+        {
+          "code": "11",
+          "name": "ITU zone 11"
+        },
+        {
+          "code": "12",
+          "name": "ITU zone 12"
+        },
+        {
+          "code": "13",
+          "name": "ITU zone 13"
+        },
+        {
+          "code": "14",
+          "name": "ITU zone 14"
+        },
+        {
+          "code": "15",
+          "name": "ITU zone 15"
+        },
+        {
+          "code": "16",
+          "name": "ITU zone 16"
+        },
+        {
+          "code": "17",
+          "name": "ITU zone 17"
+        },
+        {
+          "code": "18",
+          "name": "ITU zone 18"
+        },
+        {
+          "code": "19",
+          "name": "ITU zone 19"
+        },
+        {
+          "code": "20",
+          "name": "ITU zone 20"
+        },
+        {
+          "code": "21",
+          "name": "ITU zone 21"
+        },
+        {
+          "code": "22",
+          "name": "ITU zone 22"
+        },
+        {
+          "code": "23",
+          "name": "ITU zone 23"
+        },
+        {
+          "code": "24",
+          "name": "ITU zone 24"
+        },
+        {
+          "code": "25",
+          "name": "ITU zone 25"
+        },
+        {
+          "code": "26",
+          "name": "ITU zone 26"
+        },
+        {
+          "code": "27",
+          "name": "ITU zone 27"
+        },
+        {
+          "code": "28",
+          "name": "ITU zone 28"
+        },
+        {
+          "code": "29",
+          "name": "ITU zone 29"
+        },
+        {
+          "code": "30",
+          "name": "ITU zone 30"
+        },
+        {
+          "code": "31",
+          "name": "ITU zone 31"
+        },
+        {
+          "code": "32",
+          "name": "ITU zone 32"
+        },
+        {
+          "code": "33",
+          "name": "ITU zone 33"
+        },
+        {
+          "code": "34",
+          "name": "ITU zone 34"
+        },
+        {
+          "code": "35",
+          "name": "ITU zone 35"
+        },
+        {
+          "code": "36",
+          "name": "ITU zone 36"
+        },
+        {
+          "code": "37",
+          "name": "ITU zone 37"
+        },
+        {
+          "code": "38",
+          "name": "ITU zone 38"
+        },
+        {
+          "code": "39",
+          "name": "ITU zone 39"
+        },
+        {
+          "code": "40",
+          "name": "ITU zone 40"
+        },
+        {
+          "code": "41",
+          "name": "ITU zone 41"
+        },
+        {
+          "code": "42",
+          "name": "ITU zone 42"
+        },
+        {
+          "code": "43",
+          "name": "ITU zone 43"
+        },
+        {
+          "code": "44",
+          "name": "ITU zone 44"
+        },
+        {
+          "code": "45",
+          "name": "ITU zone 45"
+        },
+        {
+          "code": "46",
+          "name": "ITU zone 46"
+        },
+        {
+          "code": "47",
+          "name": "ITU zone 47"
+        },
+        {
+          "code": "48",
+          "name": "ITU zone 48"
+        },
+        {
+          "code": "49",
+          "name": "ITU zone 49"
+        },
+        {
+          "code": "50",
+          "name": "ITU zone 50"
+        },
+        {
+          "code": "51",
+          "name": "ITU zone 51"
+        },
+        {
+          "code": "52",
+          "name": "ITU zone 52"
+        },
+        {
+          "code": "53",
+          "name": "ITU zone 53"
+        },
+        {
+          "code": "54",
+          "name": "ITU zone 54"
+        },
+        {
+          "code": "55",
+          "name": "ITU zone 55"
+        },
+        {
+          "code": "56",
+          "name": "ITU zone 56"
+        },
+        {
+          "code": "57",
+          "name": "ITU zone 57"
+        },
+        {
+          "code": "58",
+          "name": "ITU zone 58"
+        },
+        {
+          "code": "59",
+          "name": "ITU zone 59"
+        },
+        {
+          "code": "60",
+          "name": "ITU zone 60"
+        },
+        {
+          "code": "61",
+          "name": "ITU zone 61"
+        },
+        {
+          "code": "62",
+          "name": "ITU zone 62"
+        },
+        {
+          "code": "63",
+          "name": "ITU zone 63"
+        },
+        {
+          "code": "64",
+          "name": "ITU zone 64"
+        },
+        {
+          "code": "65",
+          "name": "ITU zone 65"
+        },
+        {
+          "code": "66",
+          "name": "ITU zone 66"
+        },
+        {
+          "code": "67",
+          "name": "ITU zone 67"
+        },
+        {
+          "code": "68",
+          "name": "ITU zone 68"
+        },
+        {
+          "code": "69",
+          "name": "ITU zone 69"
+        },
+        {
+          "code": "70",
+          "name": "ITU zone 70"
+        },
+        {
+          "code": "71",
+          "name": "ITU zone 71"
+        },
+        {
+          "code": "72",
+          "name": "ITU zone 72"
+        },
+        {
+          "code": "73",
+          "name": "ITU zone 73"
+        },
+        {
+          "code": "74",
+          "name": "ITU zone 74"
+        },
+        {
+          "code": "75",
+          "name": "ITU zone 75"
+        },
+        {
+          "code": "76",
+          "name": "ITU zone 76"
+        },
+        {
+          "code": "77",
+          "name": "ITU zone 77"
+        },
+        {
+          "code": "78",
+          "name": "ITU zone 78"
+        },
+        {
+          "code": "79",
+          "name": "ITU zone 79"
+        },
+        {
+          "code": "80",
+          "name": "ITU zone 80"
+        },
+        {
+          "code": "81",
+          "name": "ITU zone 81"
+        },
+        {
+          "code": "82",
+          "name": "ITU zone 82"
+        },
+        {
+          "code": "83",
+          "name": "ITU zone 83"
+        },
+        {
+          "code": "84",
+          "name": "ITU zone 84"
+        },
+        {
+          "code": "85",
+          "name": "ITU zone 85"
+        },
+        {
+          "code": "86",
+          "name": "ITU zone 86"
+        },
+        {
+          "code": "87",
+          "name": "ITU zone 87"
+        },
+        {
+          "code": "88",
+          "name": "ITU zone 88"
+        },
+        {
+          "code": "89",
+          "name": "ITU zone 89"
+        },
+        {
+          "code": "90",
+          "name": "ITU zone 90"
+        }
+      ],
+      "required": true,
+      "placeholder": "8 · DARC"
+    }
+  ],
+  "multiplier": {
+    "kind": "itu",
+    "field": "zone"
+  },
+  "multLabel": "ITU zones + HQ stations",
+  "regionSet": "world",
+  "points": {
+    "kind": "iaru",
+    "sameZone": 1,
+    "sameContinent": 3,
+    "other": 5,
+    "hq": 1
+  },
+  "dupe": "per_band",
+  "defaultFields": [
+    "band",
+    "mode",
+    "frequency",
+    "time",
+    "notes"
+  ]
+}
