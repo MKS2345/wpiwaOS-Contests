@@ -1,3 +1,5 @@
+> **Archived.** This contest-template library was written for the first version of wpiwaOS and its template format. wpiwaOS now has its own contest engine and template format, so these templates are no longer maintained here. The repository is kept read-only for reference.
+
 # wpiwaOS-Contests
 
 A public library of portable amateur-radio contest **templates** (rules/scoring) and **events**
@@ -83,3 +85,4 @@ matching the same simplification most receiving apps already make rather than mo
 
 Events go stale every year by design — if you notice one is wrong or missing for the current
 year, a PR with just the corrected dates is very welcome.
+
